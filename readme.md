@@ -524,8 +524,56 @@ netmask 255.255.255.224
 gateway 10.78.21.129
 ```
 
+## Routing
+Routing yang dilakukan hanya pada Sulawesi dikarenakan routing pada Kalimantan dan Sumatera tidak berhasil. Alhasil, node hanya dapat melakukan ping antar sesama node di area(A1-A21) yang sama. Sementara pada Sulawesi, node yang berbeda area berhasil melakukan ping satu sama lain, bukan hanya pada area yang sama saja. Akan tetapi, node dari Sulawesi tidak bisa melakukan ping terhadap node di Kalimantan dan Sumatera.
+**JAWA**
+```
+route add -net 10.78.20.0 netmask 255.255.255.128 gw 10.78.21.190
+route add -net 10.78.0.0 netmask 255.255.248.0 gw 10.78.21.190
+route add -net 10.78.21.160 netmask 255.255.255.248 gw 10.78.21.190
+route add -net 10.78.21.168 netmask 255.255.255.248 gw 10.78.21.190
+route add -net 10.78.21.0 netmask 255.255.255.192 gw 10.78.21.190
 
+#KALIMANTAN
+route add -net 10.78.21.200 netmask 255.255.255.252 gw 10.78.21.194
+route add -net 10.78.18.0 netmask 255.255.255.0 gw 10.78.21.194
+route add -net 10.78.21.180 netmask 255.255.255.252 gw 10.78.21.194
+route add -net 10.78.21.176 netmask 255.255.255.252 gw 10.78.21.194
+route add -net 10.78.16.0 netmask 255.255.254.0 gw 10.78.21.194
+route add -net 10.78.21.96 netmask 255.255.255.224 gw 10.78.21.194
+route add -net 10.78.8.0 netmask 255.255.248.0 gw 10.78.21.194
 
+#SUMATERA
+route add -net 10.78.21.204 netmask 255.255.255.252 gw 10.78.21.198
+route add -net 10.78.19.0 netmask 255.255.255.0 gw 10.78.21.198
+route add -net 10.78.21.64 netmask 255.255.255.224 gw 10.78.21.198
+route add -net 10.78.21.184 netmask 255.255.255.252 gw 10.78.21.198
+route add -net 10.78.20.128 netmask 255.255.255.128 gw 10.78.21.198
+route add -net 10.78.21.128 netmask 255.255.255.224 gw 10.78.21.198
+```
+**SULAWESI**
+```
+#Maluku-Utara
+route add -net 10.78.0.0 netmask 255.255.248.0 gw 10.78.20.4
+
+#Makassar
+route add -net 10.78.21.168 netmask 255.255.255.248 gw 10.78.21.162
+
+#Belawa
+route add -net 10.78.21.0 netmask 255.255.255.192 gw 10.78.21.163
+```
+**MALUKU-UTARA**
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.173.21.190
+```
+**BELAWA**
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.173.21.190
+```
+**MAKASSAR**
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.173.21.190
+```
 
 
 # CIDR - CPT
