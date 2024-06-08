@@ -24,6 +24,115 @@ Berikut adalah tree untuk pembagian IP dimulai dari 10.78.0.0/20
 Berikut adalah pembagian IP yang diperoleh dari hasil pemecahan tree menjadi jaringan yang lebih kecil :
 ![image](https://github.com/J0see1/Jarkom-Modul-4-IT29/assets/143849730/20e9dfe3-8102-421e-9eeb-bb85d61c4241)
 ## Konfigurasi Network 
+**JAWA**
+```
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet dhcp
+
+#A3
+auto eth1
+iface eth1 inet static
+address 10.78.21.197
+netmask 255.255.255.252
+
+#A2
+auto eth2
+iface eth2 inet static
+address 10.78.21.193
+netmask 255.255.255.252
+
+#A1
+auto eth3
+iface eth3 inet static
+address 10.78.21.189
+netmask 255.255.255.252
+```
+**SULAWESI**
+```
+auto lo
+iface lo inet loopback
+
+#A1
+auto eth0
+iface eth0 inet static
+address 10.78.21.190
+netmask 255.255.255.252
+gateway 10.78.21.189
+
+#A6
+auto eth1
+iface eth1 inet static
+address 10.78.21.161
+netmask 255.255.255.248
+
+#A4
+auto eth2
+iface eth2 inet static
+address 10.78.20.1
+netmask 255.255.255.128
+```
+**KALIMANTAN**
+```
+auto lo
+iface lo inet loopback
+
+#A2
+auto eth0
+iface eth0 inet static
+address 10.78.21.194
+netmask 255.255.255.252
+gateway 10.78.21.193
+
+#A9
+auto eth1
+iface eth1 inet static
+address 10.78.21.201
+netmask 255.255.255.252
+```
+**SUAMTERA**
+```
+auto lo
+iface lo inet loopback
+
+#A3
+auto eth0
+iface eth0 inet static
+address 10.78.21.198
+netmask 255.255.255.252
+gateway 10.78.21.197
+
+#A16
+auto eth1
+iface eth1 inet static
+address 10.78.21.205
+netmask 255.255.255.252
+
+#A18
+auto eth2
+iface eth2 inet static
+address 10.78.21.65
+netmask 255.255.255.224
+```
+**PC-Marisa**
+#A4
+auto eth0
+iface eth0 inet static
+address 10.78.20.2
+netmask 255.255.255.128
+gateway 10.78.20.1
+**PC-Gorontalo**
+#A4
+auto eth0
+iface eth0 inet static
+address 10.78.20.3
+netmask 255.255.255.128
+gateway 10.78.20.1
+
+
+
 
 # CIDR - CPT
 
