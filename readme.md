@@ -13,12 +13,17 @@
 
 
 # VLSM - GN3
+Teknik subnetting yang dikenal sebagai Variable Length Subnet Masking (VLSM) merupakan teknik yang digunakan untuk memaksimalkan pembagian alamat IP di dalam jaringan. Netmask besar disesuaikan dengan banyaknya komputer atau host yang membutuhkan alamat IP.
+VLSM membagi jaringan besar menjadi subnet yang lebih kecil. Setiap subnet kemudian diberi netmask yang sesuai dengan jumlah host yang dibutuhkannya. Dengan demikian, netmask dengan jumlah host yang lebih besar akan memiliki bitmask yang lebih sedikit, sementara netmask dengan jumlah host yang lebih sedikit akan memiliki bitmask yang lebih besar.
 
 Metode VLSM dilakukan menggunakan platform GNS3. Berikut adalah penjelasan lebih lanjutnya : 
 ## Tree
 Berikut adalah tree untuk pembagian IP dimulai dari 10.78.0.0/20
 ![vlsmtree-it29](https://github.com/J0see1/Jarkom-Modul-4-IT29/assets/143849730/010c5484-f433-46b8-b9ba-bbdf45a2eae5)
-
+## Pembagian IP
+Berikut adalah pembagian IP yang diperoleh dari hasil pemecahan tree menjadi jaringan yang lebih kecil :
+![image](https://github.com/J0see1/Jarkom-Modul-4-IT29/assets/143849730/20e9dfe3-8102-421e-9eeb-bb85d61c4241)
+## Konfigurasi Network 
 
 # CIDR - CPT
 
