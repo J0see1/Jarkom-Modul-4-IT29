@@ -14,6 +14,12 @@
 
 # VLSM - GN3
 
+Metode VLSM dilakukan menggunakan platform GNS3. Berikut adalah penjelasan lebih lanjutnya : 
+## Tree
+Berikut adalah tree untuk pembagian IP dimulai dari 10.78.0.0/20
+![vlsmtree-it29](https://github.com/J0see1/Jarkom-Modul-4-IT29/assets/143849730/010c5484-f433-46b8-b9ba-bbdf45a2eae5)
+
+
 # CIDR - CPT
 
 Untuk metode CIDR atau Classless Inter-Domain Routing akan direpresentasikan dengan tools Cisco Packet Tracker.
