@@ -92,7 +92,7 @@ iface eth1 inet static
 address 10.78.21.201
 netmask 255.255.255.252
 ```
-**SUAMTERA**
+**SUMATERA**
 ```
 auto lo
 iface lo inet loopback
@@ -117,19 +117,413 @@ address 10.78.21.65
 netmask 255.255.255.224
 ```
 **PC-Marisa**
+```
 #A4
 auto eth0
 iface eth0 inet static
 address 10.78.20.2
 netmask 255.255.255.128
 gateway 10.78.20.1
+```
 **PC-Gorontalo**
+```
 #A4
 auto eth0
 iface eth0 inet static
 address 10.78.20.3
 netmask 255.255.255.128
 gateway 10.78.20.1
+```
+**MALUKU-UTARA**
+```
+auto lo
+iface lo inet loopback
+
+#A4
+auto eth0
+iface eth0 inet static
+address 10.78.20.4
+netmask 255.255.255.128
+gateway 10.78.20.1
+
+#A5
+auto eth1
+iface eth1 inet static
+address 10.78.0.1
+netmask 255.255.248.0
+```
+**Tobelo**
+```
+#A5
+auto eth0
+iface eth0 inet static
+address 10.78.0.2
+netmask 255.255.248.0
+gateway 10.78.0.1
+```
+**Morotai**
+```
+#A5
+auto eth0
+iface eth0 inet static
+address 10.78.0.3
+netmask 255.255.248.0
+gateway 10.78.0.1
+```
+**Ternate**
+```
+#A5
+auto eth0
+iface eth0 inet static
+address 10.78.0.4
+netmask 255.255.248.0
+gateway 10.78.0.1
+```
+**MAKASSAR**
+```
+auto lo
+iface lo inet loopback
+
+#A6
+auto eth0
+iface eth0 inet static
+address 10.78.21.162
+netmask 255.255.255.248
+gateway 10.78.21.161
+
+#A7
+auto eth1
+iface eth1 inet static
+address 10.78.21.169
+netmask 255.255.255.248
+```
+**Galesong**
+```
+#A7
+auto eth0
+iface eth0 inet static
+address 10.78.21.170
+netmask 255.255.255.248
+gateway 10.78.21.169
+```
+**Topejawa**
+```
+#A7
+auto eth0
+iface eth0 inet static
+address 10.78.21.171
+netmask 255.255.255.248
+gateway 10.78.21.169
+```
+**BELAWA**
+```
+auto lo
+iface lo inet loopback
+
+#A6
+auto eth0
+iface eth0 inet static
+address 10.78.21.163
+netmask 255.255.255.248
+gateway 10.78.21.161
+
+#A8
+auto eth1
+iface eth1 inet static
+address 10.78.21.1
+netmask 255.255.255.192
+```
+**Madini**
+```
+#A8
+auto eth0
+iface eth0 inet static
+address 10.78.21.2
+netmask 255.255.255.192
+gateway 10.78.21.1
+```
+**Baru**
+```
+#A8
+auto eth0
+iface eth0 inet static
+address 10.78.21.3
+netmask 255.255.255.192
+gateway 10.78.21.1
+```
+**KALIMANTAN-UTARA**
+```
+auto lo
+iface lo inet loopback
+
+#A9
+auto eth0
+iface eth0 inet static
+address 10.78.21.202
+netmask 255.255.255.252
+gateway 10.78.21.201
+
+#A10
+auto eth1
+iface eth1 inet static
+address 10.78.18.1
+netmask 255.255.255.0
+
+#A11
+auto eth2
+iface eth2 inet static
+address 10.78.21.181
+netmask 255.255.255.252
+```
+**Selimau**
+```
+#A10
+auto eth0
+iface eth0 inet static
+address 10.78.18.2
+netmask 255.255.255.0
+gateway 10.78.18.1
+```
+**KALIMANTAN-TIMUR**
+```
+auto lo
+iface lo inet loopback
+
+#A11
+auto eth0
+iface eth0 inet static
+address 10.78.21.182
+netmask 255.255.255.252
+gateway 10.78.21.181
+
+
+#A12
+auto eth1
+iface eth1 inet static
+address 10.78.21.177
+netmask 255.255.255.252
+
+#A13
+auto eth2
+iface eth2 inet static
+address 10.78.16.1
+netmask 255.255.254.0
+```
+**Bangkirai**
+```
+#A13
+auto eth0
+iface eth0 inet static
+address 10.78.16.2
+netmask 255.255.254.0
+gateway 10.78.16.1
+```
+**Lamaru**
+```
+#A13
+auto eth0
+iface eth0 inet static
+address 10.78.16.3
+netmask 255.255.254.0
+gateway 10.78.16.1
+```
+**KALIMANTAN-SELATAN**
+```
+auto lo
+iface lo inet loopback
+
+#A12
+auto eth0
+iface eth0 inet static
+address 10.78.21.178
+netmask 255.255.255.252
+gateway 10.78.21.178
+
+#A14
+auto eth1
+iface eth1 inet static
+address 10.78.21.97
+netmask 255.255.255.224
+
+#A15
+auto eth2
+iface eth2 inet static
+address 10.78.8.1
+netmask 255.255.248.0
+```
+**Angsana**
+```
+#A14
+auto eth0
+iface eth0 inet static
+address 10.78.21.98
+netmask  255.255.255.224
+gateway 10.78.21.97
+```
+**Bajuin**
+```
+#A15
+auto eth0
+iface eth0 inet static
+address 10.78.8.2
+netmask 255.255.248.0
+gateway 10.78.8.1
+```
+**Takisung**
+```
+#A15
+auto eth0
+iface eth0 inet static
+address 10.78.8.3
+netmask 255.255.248.0
+gateway 10.78.8.1
+```
+**Batakan**
+```
+#A15
+auto eth0
+iface eth0 inet static
+address 10.78.8.4
+netmask 255.255.248.0
+gateway 10.78.8.1
+```
+**LAMPUNG**
+```
+auto lo
+iface lo inet loopback
+
+#A16
+auto eth0
+iface eth0 inet static
+address 10.78.21.206
+netmask 255.255.255.252
+gateway 10.78.21.205
+
+#A17
+auto eth1
+iface eth1 inet static
+address 10.78.19.1 
+netmask 255.255.255.0
+```
+**Sebuku**
+```
+#A17
+auto eth0
+iface eth0 inet static
+address 10.78.19.2 
+netmask 255.255.255.0
+gateway 10.78.19.1
+```
+**Sebesi**
+```
+#A17
+auto eth0
+iface eth0 inet static
+address 10.78.19.3 
+netmask 255.255.255.0
+gateway 10.78.19.1
+```
+**Samosir**
+```
+#A18
+auto eth0
+iface eth0 inet static
+address 10.78.21.66
+netmask 255.255.255.224
+gateway 10.78.21.65
+```
+**Sibandang**
+```
+#A18
+auto eth0
+iface eth0 inet static
+address 10.78.21.67
+netmask 255.255.255.224
+gateway 10.78.21.65
+```
+**SUMATERA-UTARA**
+```
+auto lo
+iface lo inet loopback
+
+#A18
+auto eth0
+iface eth0 inet static
+address 10.78.21.68
+netmask 255.255.255.224
+gateway 10.78.21.65
+
+#19
+auto eth1
+iface eth1 inet static
+address 10.78.21.185
+netmask 255.255.255.252
+```
+**ACEH**
+```
+auto lo
+iface lo inet loopback
+
+#19
+auto eth0
+iface eth0 inet static
+address 10.78.21.186
+netmask 255.255.255.252
+gateway 10.78.21.185
+
+#20
+auto eth1
+iface eth1 inet static
+address 10.78.20.129 
+netmask 255.255.255.128
+
+#21
+auto eth2
+iface eth2 inet static
+address 10.78.21.129
+netmask 255.255.255.224
+```
+**Starland**
+```
+auto eth0
+iface eth0 inet static
+address 10.78.20.132
+netmask 255.255.255.128
+gateway 10.78.20.129
+```
+**Enang-Enang**
+```
+auto eth0
+iface eth0 inet static
+address 10.78.20.131 
+netmask 255.255.255.128
+gateway 10.78.20.129
+```
+**Berawanng-Tampu**
+```
+auto eth0
+iface eth0 inet static
+address 10.78.20.130 
+netmask 255.255.255.128
+gateway 10.78.20.129
+```
+**Sabang**
+```
+auto eth0
+iface eth0 inet static
+address 10.78.21.130
+netmask 255.255.255.224
+gateway 10.78.21.129
+```
+**Lambaro**
+```
+auto eth0
+iface eth0 inet static
+address 10.78.21.131
+netmask 255.255.255.224
+gateway 10.78.21.129
+```
+
 
 
 
